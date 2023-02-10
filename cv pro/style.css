@@ -1,0 +1,94 @@
+*,*::before, *::after{
+    font-family:'Open Sans',sans-serif;
+    
+}
+.container{
+    background-color: rgb(218, 156, 218);
+}
+body{
+    background-color: rgb(165, 163, 194);
+}
+h1{
+    text-align:left;
+    margin-left: 40px;
+    color:rgb(239, 229, 248);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.card-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+    gap:1rem;
+}
+.card{
+    --padding: 6px;
+    background: white;
+    border:1px solid grey;
+    border-radius:.40rem;
+    max-width:300px;
+    overflow:hidden;
+    background-color: rgb(218, 216, 237);
+}
+.card.card-shadow{
+    border:none;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,.2);
+   padding:40px;
+
+   
+  
+}
+.card-header{
+    font-size:1.5rem;
+    padding: var(--padding);
+    padding-bottom:0;
+    margin-bottom:.5rem ;
+
+}
+.car-header.card-image {
+    padding:0;
+    overflow:hidden;
+    
+
+}
+  img{
+    display: block;
+    width:100%;
+    max-height:200px;
+    object-fit:cover;
+    object-position:center;
+}
+.card:hover img{
+    transform: scale(1.025);
+}
+.card-body{
+    font-size:.9rem;
+    padding: 0 ;
+    margin-top:10px;
+}
+.card-footer{
+    margin-top:1rem;
+}
+.btn{
+    --color:hsl(200,50%,50%);
+    background: var(--color);
+    color:white;
+    border:none;
+    padding:.5em .75em;
+    font-size:1rem;
+    border-radius: .25em;
+    cursor:pointer;
+
+}
+.btn:hover,.btn:focus{
+background: hsl(200, 50%,60%);
+}
+.btn.btn-outline{
+    background: none;
+    border:1px solid var(--color);
+    color: var(--color);
+}
+.btn.btn-outline:hover,.btn.btn-outline:focus{
+    background:hsl(200,50%,90%);
+}
+.btn +.btn{
+    margin-left: .25rem;
+}
